@@ -1,0 +1,25 @@
+package hackerrank;
+	import java.util.*;
+	public class Candles {
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int n,i,max=0,count=0;
+		n=sc.nextInt();
+		int[] ar= new int[n];
+		for(i=0;i<n;i++)
+		{
+			ar[i]=sc.nextInt();
+			if(ar[i]>max)
+			{
+				max= ar[i];
+			}
+			 if(max>ar[i])
+             {
+                 count++;
+             }
+		}
+		System.out.println("no of tallest candles = "+count);
+
+	}
+	}
