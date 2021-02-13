@@ -1,5 +1,5 @@
 import java.util.*;
-public class Solution {
+public class Minmax {
     public static void main(String[] args) 
     {
         Scanner in = new Scanner(System.in);
@@ -11,7 +11,7 @@ public class Solution {
             num[i] = in.nextLong();
             if(num[i]>max) max = num[i];
             if(num[i]<min) min = num[i];
-            s += num[i];
+            s+= num[i];
         }
         System.out.println( (s - max) + " " + (s - min));
     }
