@@ -1,0 +1,18 @@
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) 
+    {
+        Scanner in = new Scanner(System.in);
+        long[] num = new long[5];
+        long max = 0, min= 0 , s =0;
+        num[0] = max = min = s = in.nextLong();
+        for (int i = 1; i < 5; i++) 
+        {
+            num[i] = in.nextLong();
+            if(num[i]>max) max = num[i];
+            if(num[i]<min) min = num[i];
+            s += nums[i];
+        }
+        System.out.println( (s - max) + " " + (s - min));
+    }
+}
