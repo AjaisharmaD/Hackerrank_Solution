@@ -1,0 +1,17 @@
+import java.util.*;
+import java.util.regex.*;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+public class Time_converstion
+{
+ public static void main(String[] args) throws Exception
+ {
+    Scanner sc= new Scanner(System.in);
+    String s= sc.nextLine();
+    DateFormat df= new SimpleDateFormat("hh:mm:ssa");
+    DateFormat odf=  new SimpleDateFormat("HH:mm:ss");
+    Date dt=df.parse(s);
+    System.out.println(odf.format(dt));    
+ }
+}
