@@ -1,0 +1,29 @@
+import java.util.*;
+import java.math.*;
+public class Grading_student {
+	public static void main(String[] args)
+	{
+		Scanner sc= new Scanner(System.in);
+		int n= sc.nextInt();
+		int grade[] = new int[n];
+		for(int i=0;i<n;i++)
+		{
+			grade[i]=sc.nextInt();
+		}
+		for(int i=0;i<grade.length;i++)
+		{
+			if(grade[i]>=38)
+			{
+				int multifive=5-(grade[i]%5)+grade[i];
+				if(multifive-grade[i]<3)
+				{
+					grade[i]=multifive;
+				}
+				System.out.println(grade[i]);
+			}
+			else {
+				System.out.println(grade[i]);
+			}
+		}
+	}
+}
