@@ -1,0 +1,26 @@
+import java.util.*;
+public class salesbymatch {
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,count=0,pair=0;
+        n=sc.nextInt();
+        HashSet<Integer> Set=new HashSet<>();
+        for(int i =0;i<n;i++)
+        {
+            count=sc.nextInt();
+            if(Set.contains(count))
+            {
+                Set.remove(count);
+                pair++;
+            }
+            else
+            {
+                Set.add(count);
+            }
+           
+        }
+        System.out.print(pair);
+    }
+
+}
